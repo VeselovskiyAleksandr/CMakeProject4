@@ -13,9 +13,4 @@ FetchContent_Declare(cpr GIT_REPOSITORY https://github.com/whoshuu/cpr.git GIT_T
 FetchContent_MakeAvailable(cpr) 
 
 add_subdirectory ("CMakeProject4")
-add_executable (CMakeProject4 "CMakeProject4.cpp" "CMakeProject4.h")
-target_link_libraries(CMakeProject1 PRIVATE cpr::cpr) 
-
-#add_executable (CMakeProject4 "CMakeProject4.cpp" "CMakeProject4.h")
 # Включите подпроекты.
-#target_link_libraries(CMakeProject1 PRIVATE cpr::cpr) 

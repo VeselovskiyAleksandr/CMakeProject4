@@ -6,5 +6,5 @@ project ("CMakeProject4")
 
 # Добавьте источник в исполняемый файл этого проекта.
 add_executable (CMakeProject4 "CMakeProject4.cpp" "CMakeProject4.h")
-#target_link_libraries(CMakeProject4 PRIVATE cpr::cpr) 
+target_link_libraries(CMakeProject4 PRIVATE cpr::cpr) 
 # TODO: Добавьте тесты и целевые объекты, если это необходимо.

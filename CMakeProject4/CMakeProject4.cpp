@@ -42,8 +42,9 @@ int main()
 			}
 		} while (command != "exit");
 	//case 2:
-		cpr::Response response = cpr::Get(cpr::Url("http://httpbin.org/html"));// -accept: text / html"));
-		cpr::Header({ {"Accept",  "application / xhtml + xml, application / xml; q = 0.9, image / avif, image / webp, image / apng, */*;q=0.8,application/signed-exchange;v=b3;q=0.9"} });
+		cpr::Response response = cpr::Get(cpr::Url("http://httpbin.org/html"));// accept: text / html"));
+	//	cpr::Header({ {"Accept",  "application / xhtml + xml, application / xml; q = 0.9, image / avif, image / webp, image / apng, */*;q=0.8,application/signed-exchange;v=b3;q=0.9 find<h1></h1>"} });
+	//	cpr::Header({ {"Accept",  "application / find<h1></h1>"} });
 		cout << response.text;
 	//}
 	return 0;
